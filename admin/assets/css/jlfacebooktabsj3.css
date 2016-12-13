@@ -1,0 +1,230 @@
+/**
+ * @version     1.3
+ * @package     JLinker Facebook Tabs for J3
+ * @copyright	Copyright (c) 2015 JLinker - All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ * @author      David Fiaty <contact@jlinker.com> - http://www.jlinker.com
+ */
+
+/* default joomla*/
+#toolbar {
+	text-align: right;
+}
+
+#filter-bar {
+	height: 90px !important;
+}
+
+.control-group {
+	margin-bottom: 15px !important;
+}
+
+/* extension css */
+.jlfbs table {
+	position: static !important;
+	min-height: 30px;
+}
+
+#jl-form {
+	margin-bottom: 50px;
+}
+
+#filter-bar h1 {
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+}
+
+.jl-field-error {
+	border: solid 1px red !important;
+	background-color: #ff9900 !important;
+}
+
+#jl-container {
+    margin: 0px 0px 0px -50px;
+}
+
+#jl-tree {
+}
+
+#jl-tree input {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#jl-tree li {
+    margin: 0px 0px 0px 24px;
+    min-height: 30px;    
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    position: relative !important;
+}
+
+#jl-tree li:hover {
+    background-color: #e6e6e6 !important;
+}
+
+.jl-odd {
+	background-color: #ffffff;
+}
+
+.jl-even {
+	background-color: #f3f3f3;
+}
+
+#jl-tree .daredevel-tree-label {
+	font-family: Arial;
+	font-size: 11px;
+	margin-left: 10px; 
+	height: 35px !important;
+	line-height: 35px !important;
+}
+
+#jl-tree .daredevel-tree-label.ui-state-active {
+	border: none !important;
+	background: none !important;
+}
+
+#jl-tree .daredevel-tree-anchor {
+	margin-top: 7px; 
+	cursor: pointer;
+}
+
+
+#jl-tree input[type=checkbox] {
+	margin-top: -3px !important;
+	cursor: pointer;
+}
+
+#jl-tree div.jl_catinfo
+{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	padding: 2px !important;
+	width: 80%;
+	background: none;
+}
+
+#jl-tree div.jl_catinfo span {
+	display: block;
+	float: right;
+	margin-left: 50px;
+}
+
+#jl-tree input[name^=jl_titles] {
+	right: 205px;
+}
+
+#jl-headers {
+	position: relative;
+}
+
+#jl-headers h1 {
+	color: #ccccccc;
+	font-size: 11px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+#jl-headers h1:nth-of-type(1) {
+
+}
+
+#jl-headers h1:nth-of-type(2) {
+	margin-right: 0px;
+	float: right;
+}
+
+#jl-headers h1:nth-of-type(3) {
+
+}
+
+
+.jl-no-data {
+	margin-left: 50px;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+
+.clr {
+	clear: both;
+	visibility: hidden;
+}
+/* editor */
+.editor {
+
+	border: solid 1px #cccccc !important;
+	border-collapse: collapse !important;
+	width: 550px !important;
+	height: 300px;	
+}
+/* sidebar */
+#j-sidebar-container input[type=text] {
+	width: 93%;
+}
+
+/*dependent selects*/
+#jl-selectors-1 {
+	/*width: 50%;*/
+	margin-left: 21px;
+	margin-bottom: 20px;
+}
+
+#jl-selectors-1 div {
+	margin-right: 10px;
+}
+
+/*progress bar*/
+#jl-progressbar {
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+
+/*fb btn */
+.jlfbs-btn {
+	width: 20px;
+	height: 20px;
+}
+
+.jlfbs-btn a.fb-show {
+	display: block;
+	width: inherit;
+	height: inherit;
+	background-image: url(../images/fb.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.fb-send {
+	margin-left: 0px;
+	display: inline-block;
+	margin-top: -20px !important;
+}
+
+.fb-check {
+	display: inline-block;
+	margin-top: -20px !important;
+}
+
+#fb_page_url {
+	display: block;
+}
+
+.fb-send-progress {
+	margin-left: 10px;
+	width: 28px;
+	height: 28px;
+	background-image: url(../images/spinner-sma.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	display: inline-block;
+	visibility: hidden;
+}
+
+/*jquery ui override*/
+div  {
+	border: none !important;
+}

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+		<field name="id" type="text" default="0" label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_ID"
+		readonly="true" class="readonly"
+		description="" /> 
+
+		<field name="name" type="text"
+		
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_NAME"
+			description="" 
+		
+		
+				 required="true"  /> 
+
+		<field name="theme" type="list"
+		
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_THEME"
+			description="" 
+		
+			multiple="false"
+			option_on="Yes"
+			option_off="Yes">
+
+				<option value="gray">Gray</option>   
+				<option value="orange">Orange</option>   
+				<option value="blue">Blue</option>      
+				<option value="red">Red</option>  
+				<option value="ocean">Ocean</option>
+				<option value="green">Green</option>  
+				<option value="black">Black</option>  
+
+
+		</field> 
+
+		<field name="layout" type="list"
+			default="table"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_LAYOUT"
+			description=""      
+			multiple="false"
+			option_on="Yes"
+			option_off="Yes">
+				<option value="table">Table</option>
+				<option value="grid">Grid</option>
+				<option value="slideshow">Slideshow</option>
+		</field> 
+		<field name="featured_only" type="radio" default="0"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_FEATURED_ONLY"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_tags" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_TAGS"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_image" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_IMAGE"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_author" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_AUTHOR"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field name="show_creation_date" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_CREATION"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field name="show_hits" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_HITS"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_rating" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_RATING"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_readmore" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_READMORE"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="show_desc_icon" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_DESC_ICON"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_info_icon" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_INFO_ICON"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="intro_text" type="editor" filter="safehtml" buttons="true" hide="readmore,pagebreak" 
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_INTRO_TEXT"
+			description=""
+		/>
+		<field name="footer_text" type="editor" filter="safehtml" buttons="true" hide="readmore,pagebreak" 
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_FOOTER_TEXT"
+			description=""
+		/>
+		<field name="show_short_desc" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHORT_DESC"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="short_desc_max" type="text" default="80"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_DESC_MAX"
+			description=""
+
+		/>
+		<field name="allow_desc_html" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_DESC_HTML"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="lightbox_active" type="radio" default="1"
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_LIGHTBOX_ACTIVE"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="show_category" type="radio" default="1" label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_CATEGORY" description="" class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_hits" type="radio" default="1" label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_HITS" description="" class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_author" type="radio" default="1" label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_AUTHOR" description="" class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_creation_date" type="radio" default="1" label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_SHOW_CREATION_DATE" description="" class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="cache_enabled" type="radio" default="0"
+			label="COM_JLFACEBOOKTABSJ3_CACHE_ENABLED"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="items_limit" type="radio" default="0"
+			label="COM_JLFACEBOOKTABSJ3_ITEMS_LIMIT"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="items_sort" type="radio" default="0"
+			label="COM_JLFACEBOOKTABSJ3_ITEMS_SORT"
+			description=""
+			class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="language" type="contentlanguage"
+		
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_LANGUAGE"
+			description="" 
+
+		> 
+		<option value="*">JALL</option>
+		</field>
+		
+		
+		<field name="created_by" type="createdby" default="" 
+			label="COM_JLFACEBOOKTABSJ3_FORM_LBL_FACEBOOKTAB_CREATED_BY"
+			description=""  /> 
+
+		 <field
+		name="state"
+		type="list"
+		label="JSTATUS"
+		description=""
+		class="inputbox"
+		size="1"
+		default="1">
+		<option value="1">JPUBLISHED</option>
+		<option value="0">JUNPUBLISHED</option>
+		<option value="2">JARCHIVED</option>
+		<option value="-2">JTRASHED</option>
+		</field> 
+
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>
+
+

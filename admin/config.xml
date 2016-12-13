@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_JLFACEBOOKTABSJ3_OPTIONS" name="jloptions">
+		<field name="apikey" type="text" label="COM_JLFACEBOOKTABSJ3_API_KEY_LABEL" description="COM_JLFACEBOOKTABSJ3_API_KEY_DESC" />
+		<field name="default_image" type="media" directory="stories" label="COM_JLFACEBOOKTABSJ3_DEFAULT_IMAGE_LABEL" description="COM_JLFACEBOOKTABSJ3_DEFAULT_IMAGE_DESC" />
+    </fieldset>
+    <fieldset 
+        name="permissions"
+	description="JCONFIG_PERMISSIONS_DESC"
+	label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+                    name="rules" type="rules" component="com_jlfacebooktabsj3"
+                    class="inputbox" filter="rules" validate="rules"
+                    label="JCONFIG_PERMISSIONS_LABEL"
+                    section="component" />
+	</fieldset>
+</config>

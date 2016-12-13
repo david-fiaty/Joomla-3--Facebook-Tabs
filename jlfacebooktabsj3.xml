@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+    <name>COM_JLFACEBOOKTABSJ3</name>
+    <creationDate>2015-04-30</creationDate>
+    <copyright>Copyright (C) 2015. Tous droits réservés.</copyright>
+    <license>GNU General Public License version 2 ou version ultérieure ; Voir LICENSE.txt</license>
+    <author>David Fiaty</author>
+    <authorEmail>contact@jlinker.com</authorEmail>
+    <authorUrl>http://www.jlinker.com</authorUrl>
+    <version>1.3</version>
+    <description></description>    
+	<scriptfile>script.php</scriptfile>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+	<update> 
+		<schemas> 
+			<schemapath type="mysql">sql/updates/mysql</schemapath> 
+		</schemas> 
+	</update>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>jlfacebooktabsj3.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <administration>
+        <menu >COM_JLFACEBOOKTABSJ3</menu>
+        <submenu>
+            
+			<menu link="option=com_jlfacebooktabsj3&amp;view=facebooktabs" view="facebooktabs" alt="Jlfacebooktabsj3/Facebooktabs">COM_JLFACEBOOKTABSJ3_TITLE_FACEBOOKTABS</menu>
+
+        </submenu>
+        <files folder="admin">
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>jlfacebooktabsj3.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jlfacebooktabsj3.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jlfacebooktabsj3.sys.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_jlfacebooktabsj3.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_jlfacebooktabsj3.sys.ini</language>
+        </languages>
+    </administration>
+	<updateservers>
+		<server type="extension" priority="1" name="JLinker Facebook Tabs Joomla 3">https://www.jlinker.com/web/apps/joomla/update/jlfacebooktabsj3.xml</server>
+	</updateservers>    
+</extension>
