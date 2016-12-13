@@ -1,5 +1,6 @@
 # Joomla-3-Facebook-Tabs
 Experimental version of JLinker Facebook Tabs for Joomla 3.x. Stable version available on joomla.org
+https://extensions.joomla.org/extensions/extension/social-web/social-display/jlinker-facebook-tabs-for-joomla
 
 #Display your Joomla articles and categories on Facebook !
 JLinker Facebook Tabs for Joomla allows you to quickly create and manage multiple Facebook Tabs filled up with Joomla articles. The extension is simple, multi-language, offers 7 themes and 3 layouts for the presentation of Joomla content.
